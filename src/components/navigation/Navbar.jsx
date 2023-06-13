@@ -64,7 +64,7 @@ export default function Navbar() {
                            <NavLink
                               key={item.name}
                               to={item.href}
-                              className="text-base font-semibold text-gray-900 hover:text-indigo-800 tracking-wide"
+                              className="text-[17px] font-circular-book text-gray-900 hover:text-indigo-800 tracking-wider"
                            >
                               {item.name}
                            </NavLink>

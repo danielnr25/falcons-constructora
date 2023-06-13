@@ -16,28 +16,28 @@ const Contact = () => {
                   Para cualquier contacto o comunicación con la empresa, pueden
                   utilizar los siguientes medios:
                 </p>
-                <dl class="mt-10 space-y-4 text-base leading-7 text-gray-600">
+                <dl class="mt-10 space-y-6 text-lg leading-7 text-gray-600">
                   <div class="flex gap-x-4 items-center">
                     <dt class="flex-none">
                       <span class="sr-only">Telephone</span>
                       <HomeIcon
-                        className="w-5 h-5 mt-1 text-gray-900/50 hover:text-gray-900"
+                        className="w-6 h-6 text-gray-900/50 hover:text-gray-900"
                         aria-hidden="true"
                       />
                     </dt>
-                    <dd>Chiclayo - Perú</dd>
+                    <dd className="text-lg font-circular-book tracking-wide">Chiclayo - Perú</dd>
                   </div>
                   <div class="flex gap-x-4 items-center">
                     <dt class="flex-none">
                       <span class="sr-only">Telephone</span>
                       <PhoneIcon
-                        className="w-5 h-5 mt-1 text-gray-900/50 hover:text-gray-900"
+                        className="w-6 h-6  text-gray-900/50 hover:text-gray-900"
                         aria-hidden="true"
                       />
                     </dt>
                     <dd>
                       <a
-                        class="hover:text-gray-900"
+                        class="hover:text-gray-900 text-lg font-circular-book tracking-wide"
                         href="tel:+1 (555) 234-5678"
                       >
                         +1 (555) 234-5678
@@ -48,13 +48,13 @@ const Contact = () => {
                     <dt class="flex-none">
                       <span class="sr-only">Telephone</span>
                       <InboxIcon
-                        className="w-5 h-5 mt-1 text-gray-900/50 hover:text-gray-900"
+                        className="w-6 h-6  text-gray-900/50 hover:text-gray-900"
                         aria-hidden="true"
                       />
                     </dt>
                     <dd>
                       <a
-                        class="hover:text-gray-900"
+                        class="hover:text-gray-900 text-lg font-circular-book tracking-wider"
                         href="mailto:hello@example.com"
                       >
                         falconsa@gmail.com

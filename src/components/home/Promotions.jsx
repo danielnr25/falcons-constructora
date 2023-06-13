@@ -12,7 +12,7 @@ const items = [
   },
   {
     id: 2,
-    title: "Cliente residencial",
+    title: "Cliente Residencial",
     description:
       "Queremos ayudarlo a construir la casa de sus sueños. Nuestro equipo de profesionales está listo para ayudarlo a construir su hogar, desde la planificación hasta la finalización. Con una amplia experiencia en la construcción de casas, nos enorgullece ofrecer soluciones de alta calidad y resultados sobresalientes. Contáctenos para recibir una cotización gratuita hoy mismo.",
     image1:

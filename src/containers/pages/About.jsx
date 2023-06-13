@@ -1,6 +1,24 @@
 import { Link } from "react-router-dom";
 import Layout from "../../hocs/Layout";
 
+const data = [
+  {
+    id: 1,
+    title: "Sobre Nosotros",
+    description: `CONSTRUCTORA OVIEDO S.A.C a lo largo de los años ha adquirido el conocimiento y la experiencia necesaria para ofrecer a los clientes un servicio de calidad, y desempeñar las labores encomendadas, relacionadas con la ejecución de proyectos inmobiliarios en Piura y la elaboración de expedientes técnicos.`,
+  },
+  {
+    id: 2,
+    title: "Lo que hacemos",
+    description: `Somos una empresa constructora en Piura especializada en prestar servicios integrales para la ejecución de proyectos inmobiliarios en Piura. Entre nuestros servicios se encuentran: ejecución de obras de ingeniería civil, demoliciones, alquiler de maquinaria pesada, o la elaboración y ejecución de proyectos de construcción`,
+  },
+  {
+    id: 3,
+    title: "Nuestra Resposabilidad",
+    description: `CONSTRUCTORA OVIEDO S.A.C es mucho más que una simple empresa constructora. Desde el principio, contribuimos y nos implicamos con el desarrollo social del Perú, así como respetamos tanto la normativa referente a los temas de seguridad ocupacional como el medio ambiente.`,
+  },
+];
+
 const About = () => {
   return (
     <Layout>
@@ -16,14 +34,14 @@ const About = () => {
           <h1 className="font-circular-medium lg:text-2xl text-xl mb-6 text-gray-800 tracking-wider">
             SOLUCIONES INTEGRALES EN PROYECTOS INMOBILIARIOS EN CHICLAYO
           </h1>
-          <p className="text-gray-800 text-justify mb-6">
+          <p className="text-gray-800 text-justify text-[17px]  leading-8 mb-6">
             Misión: coordinar, supervisar y ejecutar proyectos de construcción
             que satisfagan por completo las necesidades de los clientes, con
             mano de obra experta y cualificada, y las herramientas óptimas para
             ofrecer un resultado de calidad, con respeto y cuidado del medio
             ambiente.
           </p>
-          <p className="text-gray-800 text-justify mb-6">
+          <p className="text-gray-800 text-justify text-[17px] leading-8 mb-6">
             Visión: ser la empresa constructora líder en la región norte del
             Perú contribuyendo de manera activa al crecimiento de la región, y
             ofreciendo como resultado obras reconocidas por su calidad y
@@ -37,44 +55,18 @@ const About = () => {
         </div>
       </div>
 
-      <div class="py-10 px-10 sm:mt-12 lg:px-20 mb-20">
+      <div class="py-10 px-10  lg:px-20 mb-20">
         <dl class="grid max-w-2xl grid-cols-1 gap-x-8 gap-y-12 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-          <div>
-            <dt class="tracking-wide font-circular-medium text-gray-900 lg:text-2xl text-xl">
-              Sobre Nosotros
-            </dt>
-            <dd class="mt-1 text-gray-700 text-justify">
-              CONSTRUCTORA OVIEDO S.A.C a lo largo de los años ha adquirido el
-              conocimiento y la experiencia necesaria para ofrecer a los
-              clientes un servicio de calidad, y desempeñar las labores
-              encomendadas, relacionadas con la ejecución de proyectos
-              inmobiliarios en Piura y la elaboración de expedientes técnicos.
-            </dd>
-          </div>
-          <div>
-            <dt class="tracking-wide font-circular-medium text-gray-900 lg:text-2xl text-xl">
-              Lo que hacemos
-            </dt>
-            <dd class="mt-1 text-gray-700 text-justify">
-              Somos una empresa constructora en Piura especializada en prestar
-              servicios integrales para la ejecución de proyectos inmobiliarios
-              en Piura. Entre nuestros servicios se encuentran: ejecución de
-              obras de ingeniería civil, demoliciones, alquiler de maquinaria
-              pesada, o la elaboración y ejecución de proyectos de construcción
-            </dd>
-          </div>
-          <div>
-            <dt class="tracking-wide font-circular-medium text-gray-900 lg:text-2xl text-xl">
-              Nuestra Resposabilidad
-            </dt>
-            <dd class="mt-1 text-gray-700 text-justify">
-              CONSTRUCTORA OVIEDO S.A.C es mucho más que una simple empresa
-              constructora. Desde el principio, contribuimos y nos implicamos
-              con el desarrollo social del Perú, así como respetamos tanto la
-              normativa referente a los temas de seguridad ocupacional como el
-              medio ambiente.
-            </dd>
-          </div>
+          {data.map((item) => (
+            <div key={item.id} className="bg-white py-5 px-5 rounded-lg shadow-lg">
+              <dt class="text-lg lg:text-xl text-center font-circular-medium  leading-6 text-indigo-900 uppercase">
+                {item.title}
+              </dt>
+              <dd class="mt-4 text-base leading-7 text-gray-800 text-justify">
+                {item.description}
+              </dd>
+            </div>
+          ))}
         </dl>
       </div>
     </Layout>
