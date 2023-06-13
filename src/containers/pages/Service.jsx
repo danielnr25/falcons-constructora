@@ -8,7 +8,7 @@ const Service = () => {
       <div className="flex items-center justify-center">
         <div className="relative w-screen">
           <img
-            src="http://www.constructoraoviedo.com/wp-content/uploads/fond-DFo.jpg"
+            src="https://images.pexels.com/photos/2965258/pexels-photo-2965258.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt="Service"
             className="w-full h-80 object-cover shadow-lg"
           />
