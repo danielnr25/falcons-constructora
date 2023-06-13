@@ -43,6 +43,7 @@
   background-image: url('../assets/gradient.svg');
   background-repeat: no-repeat;
   background-position: top;
+  background-size: cover;
  }
 
 

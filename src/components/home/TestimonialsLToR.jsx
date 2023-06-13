@@ -82,11 +82,11 @@ export default function TestimonialsLToR() {
                     <div className="font-semibold">
                       {testimonial.author.name}
                     </div>
-                    <div className="text-gray-600">{`${testimonial.author.handle}`}</div>
+                    <div className="text-gray-600">{`@${testimonial.author.handle}`}</div>
                   </div>
                 </figcaption>
                 <blockquote className="text-gray-900">
-                  <p>{`${testimonial.body}`}</p>
+                  <p>{`"${testimonial.body}"`}</p>
                 </blockquote>
               </figure>
             </div>

@@ -75,7 +75,7 @@ const navigation = {
 export default function Footer() {
    const year = new Date().getFullYear()
    return (
-      <footer className="bg-white" aria-labelledby="footer-heading">
+      <footer className="bg-gray-900" aria-labelledby="footer-heading">
          <h2 id="footer-heading" className="sr-only">
             Footer
          </h2>
@@ -84,11 +84,11 @@ export default function Footer() {
                <div className="grid grid-cols-2 gap-8 xl:col-span-2 text-center lg:text-left">
                   <div className="md:grid md:grid-cols-2 md:gap-8">
                      <div>
-                        <h3 className="text-sm font-semibold text-gray-900 tracking-wider uppercase">Solutions</h3>
+                        <h3 className="text-sm font-circular-medium font-semibold text-gray-200 tracking-widest uppercase">Solutions</h3>
                         <ul role="list" className="mt-4 space-y-4">
                            {navigation.solutions.map((item) => (
                               <li key={item.name}>
-                                 <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
+                                 <a href={item.href} className="text-base text-gray-400 hover:text-indigo-600">
                                     {item.name}
                                  </a>
                               </li>
@@ -96,11 +96,11 @@ export default function Footer() {
                         </ul>
                      </div>
                      <div className="mt-12 md:mt-0">
-                        <h3 className="text-sm font-semibold text-gray-900 tracking-wider uppercase">Support</h3>
+                        <h3 className="text-sm font-circular-medium font-semibold text-gray-200 tracking-widest uppercase">Support</h3>
                         <ul role="list" className="mt-4 space-y-4">
                            {navigation.support.map((item) => (
                               <li key={item.name}>
-                                 <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
+                                 <a href={item.href} className="text-base text-gray-400 hover:text-indigo-600">
                                     {item.name}
                                  </a>
                               </li>
@@ -110,11 +110,11 @@ export default function Footer() {
                   </div>
                   <div className="md:grid md:grid-cols-2 md:gap-8">
                      <div>
-                        <h3 className="text-sm font-semibold text-gray-900 tracking-wider uppercase">Compañia</h3>
+                        <h3 className="text-sm font-circular-medium font-semibold text-gray-200 tracking-widest uppercase">Compañia</h3>
                         <ul role="list" className="mt-4 space-y-4">
                            {navigation.company.map((item) => (
                               <li key={item.name}>
-                                 <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
+                                 <a href={item.href} className="text-base text-gray-400 hover:text-indigo-600">
                                     {item.name}
                                  </a>
                               </li>
@@ -122,11 +122,11 @@ export default function Footer() {
                         </ul>
                      </div>
                      <div className="mt-12 md:mt-0">
-                        <h3 className="text-sm font-semibold text-gray-900 tracking-wider uppercase">Legal</h3>
+                        <h3 className="text-sm font-circular-medium font-semibold text-gray-200 tracking-widest uppercase">Legal</h3>
                         <ul role="list" className="mt-4 space-y-4">
                            {navigation.legal.map((item) => (
                               <li key={item.name}>
-                                 <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
+                                 <a href={item.href} className="text-base text-gray-400 hover:text-indigo-600">
                                     {item.name}
                                  </a>
                               </li>
@@ -136,10 +136,10 @@ export default function Footer() {
                   </div>
                </div>
                <div className="mt-8 xl:mt-0 px-8 lg:px-0">
-                  <h3 className="text-sm font-semibold text-gray-900 tracking-wider uppercase">
+                  <h3 className="text-sm font-circular-medium font-semibold text-gray-200 tracking-widest uppercase">
                      Subscribte a nuestro boletín
                   </h3>
-                  <p className="mt-4 text-base text-gray-500">
+                  <p className="mt-4 text-base text-gray-400">
                      Envía un correo para cualquier servicio, o alguna inquietud.
                   </p>
                   <form className="mt-4 sm:flex sm:max-w-md">
@@ -158,7 +158,7 @@ export default function Footer() {
                      <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
                         <button
                            type="submit"
-                           className="w-full bg-gray-200 flex items-center justify-center border border-transparent rounded-md py-2 px-4 text-base font-medium text-black hover:bg-gray-900 focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 hover:text-white"
+                           className="w-full bg-blue-700 flex items-center justify-center border border-transparent rounded-md py-2 px-4 text-base font-medium text-white hover:bg-blue-900 focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 hover:text-white"
                         >
                            Subscribete
                         </button>
@@ -169,14 +169,14 @@ export default function Footer() {
             <div className="mt-8 border-t border-gray-500 pt-8 md:flex md:items-center md:justify-between">
                <div className="flex space-x-6 md:order-2 justify-center">
                   {navigation.social.map((item) => (
-                     <a key={item.name} href={item.href} className="text-gray-700 hover:text-gray-500">
+                     <a key={item.name} href={item.href} className="text-gray-200 hover:text-blue-700">
                         <span className="sr-only">{item.name}</span>
                         <item.icon className="h-6 w-6" aria-hidden="true" />
                      </a>
                   ))}
                </div>
-               <p className="mt-8 text-base text-gray-800 md:mt-0 md:order-1 text-center">
-                  &copy; {year} Eventos, <span className="text-gray-900 font-semibold">
+               <p className="mt-8 text-base text-gray-200 md:mt-0 md:order-1 text-center">
+                  &copy; {year} Falconsa, <span className="text-gray-200 font-semibold">
                      Todos los derechos reservados.
                   </span>
                </p>
