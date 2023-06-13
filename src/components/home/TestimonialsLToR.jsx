@@ -67,7 +67,7 @@ export default function TestimonialsLToR() {
       <div className="relative isolate overflow-hidden">
         <Slider {...carouselSettings}>
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="overflow-hidden rounded-lg  p-4">
+            <div key={index} className="overflow-hidden rounded-lg p-4 testimonial-case">
               <figure
                 key={testimonial.author.handle}
                 className="rounded-2xl bg-white p-6 border border-gray-900 shadow-lg ring-1 ring-gray-900/5"
@@ -82,11 +82,11 @@ export default function TestimonialsLToR() {
                     <div className="font-semibold">
                       {testimonial.author.name}
                     </div>
-                    <div className="text-gray-600">{`@${testimonial.author.handle}`}</div>
+                    <div className="text-gray-600">{`${testimonial.author.handle}`}</div>
                   </div>
                 </figcaption>
                 <blockquote className="text-gray-900">
-                  <p>{`“${testimonial.body}”`}</p>
+                  <p>{`${testimonial.body}`}</p>
                 </blockquote>
               </figure>
             </div>

@@ -5,6 +5,8 @@ import Service from './containers/pages/Service';
 import Jobs from './containers/pages/Jobs';
 import Blog from './containers/pages/Blog';
 import Contact from './containers/pages/Contact';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 function App() {
   return (

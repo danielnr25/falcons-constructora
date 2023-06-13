@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .active{
   background-color: transparent;
   opacity: 1;
@@ -144,7 +143,7 @@
 } */
 
 
-@keyframes slide-left {
+/* @keyframes slide-left {
   0% {
     transform: translateX(-100%);
   }
@@ -175,4 +174,10 @@
 
 .animate-slide-right {
   animation: slide-right 8s linear infinite;
+} */
+
+
+.testimonial-case{
+  width: 100%;
+  display: inline-block;
 }

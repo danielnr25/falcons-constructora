@@ -58,13 +58,12 @@ export default function Testimonials() {
     autoplay: true,
     autoplaySpeed: 1000,
     cssEase: "linear",
+    centerMode: true, // Agrega esta propiedad
   };
-
-
 
   return (
     <>
-      <div className="px-6  pt-10 lg:px-8">
+      <div className="px-6 pt-10 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <div className="flex space-x-4 items-center justify-center">
             <h2 className="text-4xl font-circular-medium tracking-tight text-gray-900 sm:text-5xl">
@@ -82,7 +81,7 @@ export default function Testimonials() {
       <div className="relative isolate pt-4 overflow-hidden">
         <Slider {...carouselSettings}>
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="overflow-hidden rounded-lg  p-4">
+            <div key={index} className="overflow-hidden rounded-lg p-4">
               <figure
                 key={testimonial.author.handle}
                 className="rounded-2xl bg-white p-6 border border-gray-900 shadow-lg ring-1 ring-gray-900/5"
@@ -97,17 +96,17 @@ export default function Testimonials() {
                     <div className="font-semibold">
                       {testimonial.author.name}
                     </div>
-                    <div className="text-gray-600">{`${testimonial.author.handle}`}</div>
+                    <div className="text-gray-600">{`@${testimonial.author.handle}`}</div>
                   </div>
                 </figcaption>
                 <blockquote className="text-gray-900">
-                  <p>{`${testimonial.body}`}</p>
+                  <p>{`"${testimonial.body}"`}</p>
                 </blockquote>
               </figure>
             </div>
           ))}
         </Slider>
-      </div>
+        </div>
     </>
   );
 }
