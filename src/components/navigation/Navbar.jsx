@@ -41,11 +41,11 @@ export default function Navbar() {
           aria-hidden="true"
         />
         <div className="relative z-20">
-          <div className="flex justify-between items-center px-4 py-5 sm:px-5 sm:py-4 lg:px-10 md:justify-between md:space-x-10">
+          <div className="flex justify-between items-center px-4 py-2 sm:px-5 sm:py-1.5 lg:px-10 md:justify-between md:space-x-10">
             <div>
               <Link to="/" className="flex items-center gap-3 justify-center">
                 <img src={images.Logo} alt="logo" className="h-[70px]" />
-                <h2 className="text-3xl font-circular-bold font-bold tracking-wide text-blue-900 mt-6">
+                <h2 className="text-3xl font-circular-bold font-bold tracking-wide text-blue-900 mt-4">
                   {title}
                 </h2>
               </Link>
