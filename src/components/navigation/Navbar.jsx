@@ -57,7 +57,7 @@ export default function Navbar() {
               </Popover.Button>
             </div>
             <div className="hidden md:flex md:items-center md:justify-between">
-              <nav className="flex space-x-10 ">
+              <nav className="flex space-x-10 mt-2 ">
                 {items.map((item) => (
                   <NavLink
                     key={item.name}
