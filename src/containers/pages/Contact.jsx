@@ -40,7 +40,7 @@ const Contact = () => {
                         class="hover:text-gray-900 text-lg font-circular-book tracking-wide"
                         href="tel:+1 (555) 234-5678"
                       >
-                        +1 (555) 234-5678
+                        +51 918 184 467
                       </a>
                     </dd>
                   </div>
@@ -57,7 +57,7 @@ const Contact = () => {
                         class="hover:text-gray-900 text-lg font-circular-book tracking-wider"
                         href="mailto:hello@example.com"
                       >
-                        falconsa@gmail.com
+                        falconsa.constructor@gmail.com
                       </a>
                     </dd>
                   </div>

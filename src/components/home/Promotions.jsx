@@ -1,24 +1,25 @@
+import { images } from '../../constants'
 const items = [
   {
     id: 1,
     title: "Cliente Corporativo",
     description:
-      "Entendemos la importancia de construir planes industriales sólidos y eficientes para satisfacer las necesidades de nuestros clientes en la industria. Con una amplia experiencia en la construcción de losas de concreto, estructuras metálicas y el alquiler de maquinaria, nos enorgullece ofrecer soluciones de alta calidad y resultados sobresalientes.",
+      "Disponemos de ofrecer seguridad y seriedad ante el desarrollo del proyecto a ejecutar. Entendemos la importancia de construir planes de forma sólida y eficientes para satisfacer las necesidades de nuestros clientes. Con una amplia experiencia en la construcción de todo tipo de construcción en general, nos enorgullece ofrecer soluciones de alta calidad y resultados sobresalientes.",
     image1:
-      "https://images.pexels.com/photos/15834397/pexels-photo-15834397/free-photo-of-hombre-trabajando-industria-casco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      images.Home1,
     image2:
-      "https://images.pexels.com/photos/8960987/pexels-photo-8960987.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    images.Home2,
     class: "first-des flex items-center justify-between  ",
   },
   {
     id: 2,
     title: "Cliente Residencial",
     description:
-      "Queremos ayudarlo a construir la casa de sus sueños. Nuestro equipo de profesionales está listo para ayudarlo a construir su hogar, desde la planificación hasta la finalización. Con una amplia experiencia en la construcción de casas, nos enorgullece ofrecer soluciones de alta calidad y resultados sobresalientes. Contáctenos para recibir una cotización gratuita hoy mismo.",
+      "Queremos ayudarlo a construir la casa de sus sueños. Nuestro equipo de profesionales está listo para ayudarlo a construir su hogar, desde la planificación hasta la finalización. Con una amplia experiencia en la construcción de viviendas. Contáctenos para recibir una cotización gratuita hoy mismo.",
     image1:
-      "https://images.pexels.com/photos/323775/pexels-photo-323775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      images.Home4,
     image2:
-      "https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      images.Home3,
     class: "first-des-reverse flex items-center justify-between pt-10",
   },
 ];

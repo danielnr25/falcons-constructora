@@ -15,7 +15,7 @@ const Jobs = () => {
              Nuestras Obras
             </h2>
             <p className="mb-4 max-w-2xl text-lg leading-8 text-gray-100 ">
-            Constructora Falconsa cuenta con una reconocida experiencia en Chiclayo y toda la región norte del Perú, que queda avalada por  cualquiera de nuestros proyectos finalizados.
+            Constructora Falconsa cuenta con una reconocida experiencia en Chiclayo y toda la región norte del Perú, que queda avalada por cualquiera de nuestros proyectos finalizados.
             </p>
           </div>
         </div>

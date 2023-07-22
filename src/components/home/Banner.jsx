@@ -13,7 +13,7 @@ export default function Banner() {
                 Apostamos por el desarrollo del Perú
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-800 text-justify">
-              Somos una empresa constructora en Piura, especializada en la supervisión y ejecución de obras y proyectos de construcción, y la elaboración de expedientes técnicos. Empleamos mano de obra altamente calificada y disponemos de las herramientas y del material adecuado para ofrecer un resultado de calidad.
+              Somos una empresa constructora en Chiclayo, especializada en la supervisión y ejecución de obras y proyectos de construcción, nos encargamos de la elaboración de expedientes técnicos y diseño de tu proyecto a gusto del cliente. Empleamos mano de obra altamente calificada y disponemos de las herramientas y del material adecuado para ofrecer un resultado de calidad.
               </p>
               <button className="mt-8 bg-blue-800 hover:bg-blue-700 text-white px-8 py-2 rounded-lg items-center">¿Qué necesita construir?</button>
             </div>
