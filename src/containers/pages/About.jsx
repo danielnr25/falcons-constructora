@@ -49,14 +49,14 @@ const About = () => {
         </div>
       </div>
 
-      <div class="py-10 px-10  lg:px-20 mb-20">
-        <dl class="grid max-w-2xl grid-cols-1 gap-x-8 gap-y-12 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+      <div className="py-10 px-10  lg:px-20 mb-20">
+        <dl className="grid max-w-2xl grid-cols-1 gap-x-8 gap-y-12 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {data.map((item) => (
             <div key={item.id} className="bg-white py-5 px-5 rounded-lg shadow-lg">
-              <dt class="text-lg lg:text-xl text-center font-circular-medium  leading-6 text-indigo-900 uppercase">
+              <dt className="text-lg lg:text-xl text-center font-circular-medium  leading-6 text-indigo-900 uppercase">
                 {item.title}
               </dt>
-              <dd class="mt-4 text-base leading-7 text-gray-800 text-justify">
+              <dd className="mt-4 text-base leading-7 text-gray-800 text-justify">
                 {item.description}
               </dd>
             </div>

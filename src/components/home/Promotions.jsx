@@ -9,7 +9,7 @@ const items = [
       images.Home1,
     image2:
     images.Home2,
-    class: "first-des flex items-center justify-between  ",
+    class: "first-des flex items-center justify-between",
   },
   {
     id: 2,
